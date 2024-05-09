@@ -50,6 +50,45 @@
   margin-top: auto;
   margin-bottom: 5%;
 }
+
 .right-side {
   flex: 2;
+  display: flex;
+  background-color: rgb(226, 222, 222);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px 50px;
+}
+
+.form-containers {
+  display: flex;
+  gap: 10%;
+}
+
+.form-containers > div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+input {
+  font-size: 15px;
+  padding: 5px 15px;
+}
+
+.form-left-side,
+.form-right-side {
+  display: flex;
+  gap: 20px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
 }
