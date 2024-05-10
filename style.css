@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+}
 @font-face {
   font-family: "norse-bold";
   src: url("fonts/norse-bold-webfont.woff2") format("woff2"),
@@ -57,6 +60,7 @@
   background-color: rgb(226, 222, 222);
   flex-direction: column;
   justify-content: center;
+  gap: 30px;
 }
 
 .form-inputs {
@@ -65,6 +69,7 @@
   gap: 5px;
   background-color: rgb(255, 255, 255);
   padding: 20px 50px;
+  box-shadow: 1px 1px 10px rgb(163, 159, 159);
 }
 
 .form-containers {
@@ -81,6 +86,8 @@
 input {
   font-size: 15px;
   padding: 5px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .form-left-side,
@@ -88,7 +95,69 @@ input {
   display: flex;
   gap: 20px;
 }
+
 .form-item {
   display: flex;
   flex-direction: column;
+}
+
+input:focus {
+  border-color: blue;
+  outline: 1px solid blue;
+  box-shadow: 1px 1px 5px rgb(163, 159, 159);
+}
+
+input[type="password"]:invalid {
+  border-color: red;
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+}
+
+label {
+  font-size: 12px;
+  color: rgb(85, 83, 83);
+  letter-spacing: 2px;
+}
+
+.form-inputs > h1 {
+  color: rgb(85, 83, 83);
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.right-side > p {
+  color: rgb(85, 83, 83);
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 68px;
+}
+
+.form-row > p {
+  color: rgb(85, 83, 83);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.form-row {
+  margin: 30px 68px;
+}
+
+button {
+  margin-bottom: 30px;
+  padding: 10px 45px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(224, 169, 67);
+  color: white;
+  font-size: 18px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(193, 146, 58);
 }
