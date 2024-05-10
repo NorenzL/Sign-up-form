@@ -14,6 +14,6 @@ The project consists of a basic sign-up form with input fields and a submit butt
 
 ## Live Demo
 
-You can access the live demo [here]()
+You can access the live demo [here](https://norenzl.github.io/Sign-up-form/)
 
 This demo allows you to try out the sign-up form directly in your browser.
